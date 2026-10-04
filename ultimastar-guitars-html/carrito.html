@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carrito | UltimaStar Guitars</title>
+<meta name="description" content="Productos en tu carrito.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+<header class="site-header">
+  <a class="logo-link" href="index.html"><img src="img/logo-ultimastar.png" width="847" height="170" alt="UltimaStar Guitars, ir a la página principal"></a>
+  
+</header>
+
+<main id="contenido" tabindex="-1">
+<div class="cart-page" data-cart>
+  <h1 id="cart-heading" tabindex="-1" data-focus-target>Productos en tu carrito:</h1>
+  <div class="cart-layout">
+    <section class="cart-panel" aria-labelledby="cart-heading">
+      <ul data-cart-list hidden></ul>
+      <p class="empty" data-cart-empty>Actualmente no tienes productos en tu carrito</p>
+    </section>
+    <div class="cart-side">
+      <p class="total">Total: <span data-cart-total>$0.00</span></p>
+      <div class="buttons">
+        <a class="btn-red" href="pago.html" data-needs-items hidden>Proceder a Pagar</a>
+        <a class="btn-red" href="index.html">Volver al catálogo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<dialog class="dialog" id="dlg-remove" aria-labelledby="dlg-remove-title">
+  <div class="dialog-inner">
+    <button type="button" class="close" data-close aria-label="Cerrar"><span aria-hidden="true">X</span></button>
+    <h2 id="dlg-remove-title">¿Está seguro que desea eliminar el elemento del carrito?</h2>
+    <div class="dialog-buttons">
+      <button type="button" class="btn-white outlined" data-confirm>Si</button>
+      <button type="button" class="btn-white" data-close autofocus>No</button>
+    </div>
+  </div>
+</dialog>
+<p id="cart-status" class="visually-hidden" role="status" aria-live="polite"></p>
+</main>
+</body>
+</html>
