@@ -7,7 +7,7 @@
 <meta name="description" content="Compra realizada con éxito.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/app.js" defer></script>
 </head>
@@ -15,16 +15,17 @@
 <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 <header class="site-header">
   <a class="logo-link" href="index.html"><img src="img/logo-ultimastar.png" width="847" height="170" alt="UltimaStar Guitars, ir a la página principal"></a>
-  
+  <a class="cart-link" href="carrito.html" data-cart-link aria-label="Carrito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M1.5 2.5h3.2l2.5 12.2a1.6 1.6 0 0 0 1.6 1.3h9.4a1.6 1.6 0 0 0 1.6-1.3L21.5 6.5H6"/></svg><span class="cart-count" aria-hidden="true"></span></a>
 </header>
-
-<main id="contenido" tabindex="-1">
+<nav class="site-nav" aria-label="Navegación principal"><ul><li><a href="index.html">Guitarras</a></li><li><a href="amplificadores.html">Amplificadores</a></li><li><a href="asistencia.html">Asistencia</a></li></ul></nav>
+<main id="contenido">
 <div class="thanks">
   <h1>¡Muchas Gracias por tu compra!</h1>
   <p>Para retirar tus productos, acércate a nuestro local físico.</p>
-  <p class="address">Dirección: <a href="https://maps.app.goo.gl/iZntexFTPqYAFoUu7" target="_blank" rel="noopener">https://maps.app.goo.gl/iZntexFTPqYAFoUu7<span class="visually-hidden"> (abre Google Maps en una pestaña nueva)</span></a></p>
-  <a class="btn-red" href="index.html">Regresar a la página principal</a>
+  <p class="address">Dirección: <a href="https://maps.app.goo.gl/iZntexFTPqYAFoUu7" target="_blank" rel="noopener">Ver ubicación en Google Maps<span class="visually-hidden"> (abre en una pestaña nueva)</span></a></p>
+  <a class="btn btn-primary" href="index.html">Regresar a la página principal</a>
 </div>
 </main>
+<footer class="site-footer"><p class="footer-tagline">Instrumentos de calidad al alcance de Quito</p><a href="asistencia.html">Asistencia</a></footer>
 </body>
 </html>

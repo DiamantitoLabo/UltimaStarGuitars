@@ -7,7 +7,7 @@
 <meta name="description" content="Productos en tu carrito.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/app.js" defer></script>
 </head>
@@ -15,10 +15,10 @@
 <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 <header class="site-header">
   <a class="logo-link" href="index.html"><img src="img/logo-ultimastar.png" width="847" height="170" alt="UltimaStar Guitars, ir a la página principal"></a>
-  
+  <a class="cart-link" href="carrito.html" data-cart-link aria-label="Carrito" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M1.5 2.5h3.2l2.5 12.2a1.6 1.6 0 0 0 1.6 1.3h9.4a1.6 1.6 0 0 0 1.6-1.3L21.5 6.5H6"/></svg><span class="cart-count" aria-hidden="true"></span></a>
 </header>
-
-<main id="contenido" tabindex="-1">
+<nav class="site-nav" aria-label="Navegación principal"><ul><li><a href="index.html">Guitarras</a></li><li><a href="amplificadores.html">Amplificadores</a></li><li><a href="asistencia.html">Asistencia</a></li></ul></nav>
+<main id="contenido">
 <div class="cart-page" data-cart>
   <h1 id="cart-heading" tabindex="-1" data-focus-target>Productos en tu carrito:</h1>
   <div class="cart-layout">
@@ -29,23 +29,24 @@
     <div class="cart-side">
       <p class="total">Total: <span data-cart-total>$0.00</span></p>
       <div class="buttons">
-        <a class="btn-red" href="pago.html" data-needs-items hidden>Proceder a Pagar</a>
-        <a class="btn-red" href="index.html">Volver al catálogo</a>
+        <a class="btn btn-primary" href="pago.html" data-needs-items hidden>Proceder a Pagar</a>
+        <a class="btn btn-secondary" href="index.html">Volver al catálogo</a>
       </div>
     </div>
   </div>
 </div>
 <dialog class="dialog" id="dlg-remove" aria-labelledby="dlg-remove-title">
   <div class="dialog-inner">
-    <button type="button" class="close" data-close aria-label="Cerrar"><span aria-hidden="true">X</span></button>
-    <h2 id="dlg-remove-title">¿Está seguro que desea eliminar el elemento del carrito?</h2>
+    <button type="button" class="close" data-close aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
+    <h2 id="dlg-remove-title">¿Seguro que deseas eliminar este producto del carrito?</h2>
     <div class="dialog-buttons">
-      <button type="button" class="btn-white outlined" data-confirm>Si</button>
-      <button type="button" class="btn-white" data-close autofocus>No</button>
+      <button type="button" class="btn btn-secondary" data-confirm>Sí</button>
+      <button type="button" class="btn btn-primary" data-close autofocus>No</button>
     </div>
   </div>
 </dialog>
 <p id="cart-status" class="visually-hidden" role="status" aria-live="polite"></p>
 </main>
+<footer class="site-footer"><p class="footer-tagline">Instrumentos de calidad al alcance de Quito</p><a href="asistencia.html">Asistencia</a></footer>
 </body>
 </html>

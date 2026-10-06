@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Marshall MG15GFX 15W 1×8 Guitar Combo Amp | UltimaStar Guitars</title>
+<title>Amplificador Marshall MG15GFX 1×8 de 15 W | UltimaStar Guitars</title>
 <meta name="description" content="Potencia compacta con cuatro canales programables, efectos digitales integrados y el inconfundible rugido británico para practicar en casa.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/app.js" defer></script>
 </head>
@@ -15,32 +15,92 @@
 <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 <header class="site-header">
   <a class="logo-link" href="index.html"><img src="img/logo-ultimastar.png" width="847" height="170" alt="UltimaStar Guitars, ir a la página principal"></a>
-  
+  <a class="cart-link" href="carrito.html" data-cart-link aria-label="Carrito"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="9" cy="20" r="1.3"/><circle cx="18" cy="20" r="1.3"/><path d="M1.5 2.5h3.2l2.5 12.2a1.6 1.6 0 0 0 1.6 1.3h9.4a1.6 1.6 0 0 0 1.6-1.3L21.5 6.5H6"/></svg><span class="cart-count" aria-hidden="true"></span></a>
 </header>
-
-<main id="contenido" tabindex="-1">
+<nav class="site-nav" aria-label="Navegación principal"><ul><li><a href="index.html">Guitarras</a></li><li><a href="amplificadores.html" aria-current="true">Amplificadores</a></li><li><a href="asistencia.html">Asistencia</a></li></ul></nav>
+<main id="contenido">
 <div class="product-detail">
   <div class="photo"><img src="img/marshall-mg15gfx.jpg" alt="Amplificador combo Marshall MG15GFX negro con panel de control dorado" width="600" height="600"></div>
   <div class="info">
-    <h1>Marshall MG15GFX 15W 1×8 Guitar Combo Amp</h1>
+    <h1>Amplificador Marshall MG15GFX 1×8 de 15 W</h1>
     <p class="price">$199.99</p>
     <p class="desc">Descripción: Potencia compacta con cuatro canales programables, efectos digitales integrados y el inconfundible rugido británico para practicar en casa.</p>
     <div class="button-row">
-      <button type="button" class="btn-red" data-add="marshall">Añadir al Carrito</button>
-      <a class="btn-red" href="amplificadores.html">Volver al catálogo</a>
+      <button type="button" class="btn btn-primary" data-add="marshall">Añadir al Carrito</button>
+      <a class="btn btn-secondary" href="amplificadores.html">Volver al catálogo</a>
     </div>
+    <table class="specs" id="caracteristicas">
+      <caption>Características</caption>
+      <tbody>
+        <tr><th scope="row">Potencia total</th><td>15 W</td></tr>
+        <tr><th scope="row">Tamaño del cono</th><td>8" (20 cm)</td></tr>
+        <tr><th scope="row">Preamplificador</th><td>De transistores, con efectos digitales</td></tr>
+        <tr><th scope="row">Etapa de potencia</th><td>De transistores</td></tr>
+        <tr><th scope="row">Dimensiones</th><td>Aprox. 36 × 35 × 22 cm</td></tr>
+      </tbody>
+    </table>
+    <section class="reviews" aria-labelledby="reviews-title">
+      <h2 id="reviews-title">Opiniones de clientes</h2>
+      <p class="reviews-summary"><span class="stars" aria-hidden="true">★★★★☆</span> <span data-review-summary>4.5 de 5 · 2 reseñas</span></p>
+      <ul class="review-list" data-review-list>
+        <li class="review">
+          <div class="review-head">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="visually-hidden">Calificación: 5 de 5.</span>
+            <strong class="review-author">Sofía P.</strong>
+            <time datetime="2026-09-03">3 de septiembre de 2026</time>
+          </div>
+          <p>Perfecto para practicar en el departamento. Los efectos integrados me ahorraron comprar pedales al inicio.</p>
+        </li>
+        <li class="review">
+          <div class="review-head">
+            <span class="stars" aria-hidden="true">★★★★☆</span>
+            <span class="visually-hidden">Calificación: 4 de 5.</span>
+            <strong class="review-author">Diego L.</strong>
+            <time datetime="2026-06-21">21 de junio de 2026</time>
+          </div>
+          <p>Buen sonido a bajo volumen y muy fácil de usar. Se queda corto para tocar con banda, pero para casa es ideal.</p>
+        </li>
+      </ul>
+      <form class="review-form" data-review-form novalidate>
+        <h3>¿Ya compraste este producto? Dinos qué piensas</h3>
+        <fieldset class="star-input">
+          <legend>Tu calificación</legend>
+          <div class="star-options">
+          <input type="radio" id="star-1" name="rating" value="1"><label for="star-1"><span aria-hidden="true">★</span><span class="visually-hidden">1 estrella</span></label>
+          <input type="radio" id="star-2" name="rating" value="2"><label for="star-2"><span aria-hidden="true">★</span><span class="visually-hidden">2 estrellas</span></label>
+          <input type="radio" id="star-3" name="rating" value="3"><label for="star-3"><span aria-hidden="true">★</span><span class="visually-hidden">3 estrellas</span></label>
+          <input type="radio" id="star-4" name="rating" value="4"><label for="star-4"><span aria-hidden="true">★</span><span class="visually-hidden">4 estrellas</span></label>
+          <input type="radio" id="star-5" name="rating" value="5"><label for="star-5"><span aria-hidden="true">★</span><span class="visually-hidden">5 estrellas</span></label>
+          </div>
+        </fieldset>
+        <div class="field">
+          <label for="review-name">Tu nombre</label>
+          <input id="review-name" name="nombre" type="text" autocomplete="given-name" placeholder="Cómo quieres aparecer">
+        </div>
+        <div class="field">
+          <label for="review-text">Tu opinión</label>
+          <textarea id="review-text" name="opinion" rows="3" placeholder="¿Qué te gustó? ¿Qué mejorarías?"></textarea>
+        </div>
+        <div class="review-actions">
+          <button type="submit" class="btn btn-primary">Publicar reseña</button>
+          <p class="review-status" role="status" data-review-status></p>
+        </div>
+      </form>
+    </section>
   </div>
 </div>
 <dialog class="dialog" id="dlg-added" aria-labelledby="dlg-added-title">
   <div class="dialog-inner">
-    <button type="button" class="close" data-close aria-label="Cerrar"><span aria-hidden="true">X</span></button>
+    <button type="button" class="close" data-close aria-label="Cerrar"><span aria-hidden="true">&times;</span></button>
     <h2 id="dlg-added-title">¡Producto añadido al carrito!</h2>
     <div class="dialog-buttons">
-      <a class="btn-white outlined" href="amplificadores.html">Seguir Comprando</a>
-      <a class="btn-white" href="pago.html">Proceder al Pago</a>
+      <a class="btn btn-secondary" href="amplificadores.html">Seguir Comprando</a>
+      <a class="btn btn-primary" href="pago.html">Proceder al Pago</a>
     </div>
   </div>
 </dialog>
 </main>
+<footer class="site-footer"><p class="footer-tagline">Instrumentos de calidad al alcance de Quito</p><a href="asistencia.html">Asistencia</a></footer>
 </body>
 </html>
